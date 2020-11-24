@@ -18,10 +18,11 @@ end
 def add_post_by_title(title)
   title = Post.new(title)
   add_post(title)
-
 end
 
-
+def post_count
+  @@post_count
+end
 
 
 end
