@@ -24,7 +24,7 @@ def add_post_by_title(title)
   add_post(title)
 end
 
-def post_count
+def self.post_count
   @@post_count
 end
 
