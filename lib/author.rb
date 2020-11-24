@@ -9,6 +9,10 @@ def initialize(name)
   @posts =[]
 end
 
+def posts
+  Post.all.select {|title| title.author == self}
+end
+
 def add_post(post)
   @@post_count += 1
   @posts << post
